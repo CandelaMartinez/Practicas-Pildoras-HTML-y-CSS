@@ -1,0 +1,161 @@
+@charset "utf-0";
+
+/*resetear las opciones de los navegadores para los estilos. copiar y pegar*/
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+pre,
+code,
+address,
+variable,
+form,
+fieldset,
+blockquote {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th,
+caption {
+    font-weight: normal;
+    text-align: left;
+}
+
+img,
+fieldset {
+    border: 0;
+}
+
+ol {
+    padding-left: 1.4em;
+    list-style: decimal;
+}
+
+ul {
+    padding-left: 1.4em;
+    list-style: square;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+
+
+/*fin del reset css*/
+
+
+/*achico tamaño de la letra en el body*/
+
+body {
+    font-size: 62.5%;
+}
+
+
+/*em es la unidad, */
+
+h1 {
+    font: normal 2.4em Verdana, Geneva, sans-serif;
+    background: -webkit-repeating-linear-gradient(top, rgb(14, 5, 66), #58e6f3);
+    width: 40%;
+    border-radius: 10px;
+    /* elemento caja de h1 arriba/abajo 15px izq/dere calcule centrado.*/
+    margin: 15px auto;
+    /*texto centrado en cuadro de texto*/
+    text-align: center;
+    /*espacio por arriba y por debajo*/
+    padding: 15px;
+    /*color al texto*/
+    color: #ffffff;
+    /*sombreados a la caja y al texto 10px es el difuminado*/
+    box-shadow: #000080 5px 5px 10px;
+    /*sombra del texto distancia horizontal vertical difuminado*/
+    text-shadow: white 2px 2px 3px;
+}
+
+h2 {
+    font: bold 1.7em Verdana, geneva, Sans-serif;
+    margin: 0;
+    padding: 5px, 0px, 0px, 8px;
+    color: black;
+}
+
+section {
+    width: 91%;
+    /*el borde a arriba va a ser 1 1px a rayas color gris*/
+    border-top: 1px dashed #c0c0c0;
+    /*centramos la raya discontinua de arriba*/
+    margin: 15px auto;
+    /*colocar las imagenes una allado de otra*/
+    /*los contenedores figure son del tipo block, */
+}
+
+figure {
+    float: left;
+}
+
+
+/*selector descendiente aplique a las img que esten dentro de una figure*/
+
+figure img {
+    /*creo un marco sin borde ni fondo de 4px*/
+    padding: 4px;
+    background: #c0c0c0;
+    border-radius: 20px;
+    /*suavizo la transicion*/
+    -webkit-transition: -webkit-transform 0.3s ease-in-out 0.1s;
+    box-shadow: #c0c0c0 5px 5px 10px;
+}
+
+
+/*efecto dinamico al pasar el raton. pseudoclase*/
+
+
+/*solo para imagenes hijas de figure cuando pase el rato por encima*/
+
+figure img:hover {
+    -webkit-transform: scale(1.2);
+}
+
+
+/*pie de pagina*/
+
+figcaption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+/*rompemos el float del footer asi no queda al costado*/
+
+footer {
+    clear: both;
+    padding-top: 100px;
+}
+
+footer p {
+    font: 1.6em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: gray;
+    margin: 30px, 30px;
+}

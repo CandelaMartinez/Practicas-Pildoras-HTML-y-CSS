@@ -1,0 +1,31 @@
+#cabeceraweb {
+    background-color: blue;
+}
+
+#navegacionprincipal {
+    background-color: brown;
+}
+
+#barralateral {
+    background-color: blueviolet;
+    float: left;
+    height: 1670px;
+}
+
+#contenidoprincipal {
+    background-color: aquamarine;
+    margin-left: 280px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+#pieprincipal {
+    background-color: chartreuse;
+    clear: both;
+    margin-top: 50px;
+}
+
+li {
+    background-color: coral;
+    display: inline;
+}
